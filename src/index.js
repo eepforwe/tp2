@@ -13,7 +13,6 @@ import koaLogger from 'koa-logger';
 import methodOverride from 'koa-methodoverride';
 import middleware from 'koa-webpack';
 import dotenv from 'dotenv';
-import formatDate from 'date-fns/format';
 import getWebpackConfig from '../webpack.config.babel';
 import addRoutes from './controllers';
 import container from './container';
