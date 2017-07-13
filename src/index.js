@@ -15,6 +15,7 @@ import middleware from 'koa-webpack';
 import dotenv from 'dotenv';
 import getWebpackConfig from '../webpack.config.babel';
 import addRoutes from './controllers';
+import container from './container';
 
 export default () => {
   const app = new Koa();
