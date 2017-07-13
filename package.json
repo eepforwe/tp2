@@ -1,0 +1,92 @@
+{
+  "name": "tp2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "test-project": "dist/bin/index.js"
+  },
+  "scripts": {
+    "babel-node": "babel-node",
+    "build": "npm run webpack -- -p --env production && babel src --out-dir dist --source-maps inline",
+    "postinstall": "npm run build",
+    "eslint": "eslint src __tests__/*.*",
+    "test": "DEBUG='test-project' jest --coverage",
+    "start": "gulp server",
+    "gulp": "gulp",
+    "webpack": "webpack",
+    "nodemon": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eepforwe/tp2.git"
+  },
+  "author": "eepforwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eepforwe/tp2/issues"
+  },
+  "engines": {
+    "node": "7.7.3"
+  },
+  "homepage": "https://github.com/eepforwe/tp2#readme",
+  "dependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-polyfill": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "bootstrap": "^4.0.0-alpha.6",
+    "css-loader": "*",
+    "debug": "*",
+    "dotenv": "*",
+    "file-loader": "*",
+    "gulp": "^3.9.1",
+    "gulp-util": "*",
+    "jquery": "*",
+    "jquery-ujs": "*",
+    "koa": "*",
+    "koa-bodyparser": "*",
+    "koa-flash-simple": "*",
+    "koa-generic-session": "*",
+    "koa-logger": "*",
+    "koa-methodoverride": "*",
+    "koa-pug": "*",
+    "koa-router": "next",
+    "koa-static": "*",
+    "koa-webpack": "*",
+    "lodash": "*",
+    "nodemon": "*",
+    "pg": "*",
+    "rollbar": "*",
+    "sequelize": "*",
+    "sqlite3": "*",
+    "style-loader": "*",
+    "webpack": "*"
+  },
+  "devDependencies": {
+    "babel-plugin-istanbul": "next",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "babel-eslint": "*",
+    "jest": "*",
+    "jest-cli": "*",
+    "supertest": "*",
+    "jest-supertest-matchers": "*",
+    "flow-bin": "*",
+    "flow-typed": "*"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      "/__fixtures__/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": []
+  }
+}
