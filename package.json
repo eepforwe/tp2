@@ -67,17 +67,17 @@
     "webpack": "*"
   },
   "devDependencies": {
+    "babel-eslint": "*",
     "babel-plugin-istanbul": "next",
-    "eslint": "3.19.0",
+    "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-import": "*",
-    "babel-eslint": "*",
+    "flow-bin": "*",
+    "flow-typed": "*",
     "jest": "*",
     "jest-cli": "*",
-    "supertest": "*",
     "jest-supertest-matchers": "*",
-    "flow-bin": "*",
-    "flow-typed": "*"
+    "supertest": "*"
   },
   "jest": {
     "transformIgnorePatterns": [
