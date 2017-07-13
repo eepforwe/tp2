@@ -27,7 +27,7 @@
     "url": "https://github.com/eepforwe/tp2/issues"
   },
   "engines": {
-    "node": "7.7.3"
+    "node": "7.10.0"
   },
   "homepage": "https://github.com/eepforwe/tp2#readme",
   "dependencies": {
